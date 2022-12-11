@@ -54,6 +54,7 @@ body {
     box-shadow: 2px 2px 5px 2px;
 }
 .pic {
+    height: 200px;
     width: auto;
     margin-top: 20px;
     margin-left: 50px;
