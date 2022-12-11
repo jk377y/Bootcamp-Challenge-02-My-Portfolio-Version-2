@@ -20,7 +20,7 @@ img, picture, video, canvas, svg {
 }
 
 p, h1, h2, h3, h4, h5, h6 {
-overflow-wrap: normal;
+/* overflow-wrap: normal; */
 }
 
 :root {
@@ -38,11 +38,11 @@ overflow-wrap: normal;
 /* =========== Custom CSS =========== */
 
 body {
-    height: 250%;
+    height: 100%;
     width: 100%;
-    background: linear-gradient(-45deg, blue, black, blue, black, blue, black);
+    background: linear-gradient(-45deg, rgb(0, 46, 250), black, rgb(0, 46, 250), black, rgb(0, 46, 250), black);
     background-size: 250% 250%;
-    animation: change 15s ease-in-out infinite;
+    animation: change 10s ease-in-out infinite;
 
 }
 @keyframes change {
@@ -93,6 +93,7 @@ body {
 }
 h2, p {
     color: var(--whiteText);
+    overflow-x: hidden;
 }
 
 .links {
@@ -116,7 +117,7 @@ h2, p {
 /* =========== Main =========== */
 .main {
     display: grid;
-    grid-template: 15fr 85fr / 15fr 85fr;
+    grid-template: 15% 85% / 15% 85%;
     grid-template-areas: 
         "aboutMe    aboutText"
         "work       projects";
@@ -144,10 +145,11 @@ h2, p {
     margin-left: 20px;
     margin-right: 20px;
     padding: 15px;
+    display: flex;
+    overflow-x: hidden;
 }
 .aboutTextP {
-    overflow-x: hidden;
-    color: red;
+    padding: 30px;
 }
 .work {
     grid-area: work;
@@ -172,7 +174,7 @@ h2, p {
     padding-top: 50px;
     padding-bottom: 50px;
     display: grid;
-    grid-template: auto auto auto / auto auto;
+    grid-template: 40% 30% 30% / 50% 50%;
     grid-template-areas: 
         "one    one"
         "two    three"
@@ -181,34 +183,39 @@ h2, p {
     place-items: center;
 }
 .one, .two, .three, .four, .five {
-    border-radius: 50px;
-    border: 3px solid var(--borderColor);
+    display: flex;
+    justify-content: center;
     height: 100%;
     width: 75%;
-    opacity: 0.7;
 }
 .one {
     grid-area: one;
-    height: 100%;
-    width: 50%;
+    width: 60%;
 }
 .two {
     grid-area: two;
-    margin-right: -50px;
+    margin-right: -75px;
 }
 .three {
     grid-area: three;
-    margin-left: -50px;
+    margin-left: -75px;
 }
 .four {
     grid-area: four;
-    margin-right: -50px;
+    margin-right: -75px;
 }
 .five {
     grid-area: five;
-    margin-left: -50px;
+    margin-left: -75px;
+} 
+
+.picOne, .picTwo, .picThree, .picFour, .picFive {
+    border-radius: 30px;
+    width: 100%;
+    opacity: 0.7;
 }
-.one:hover, .two:hover, .three:hover, .four:hover, .five:hover {
+
+.one:hover img, .two:hover img, .three:hover img, .four:hover img, .five:hover img {
     border: 3px solid var(--hover);
     opacity: 1.0;
 }
@@ -236,29 +243,3 @@ h2, p {
     box-shadow: 2px 2px 7px 2px;
     border-radius: 40px;
 }
-
-
-
-
-
-/* 
-
-display: grid;
-grid-template-rows: 8fr 8fr 8fr 8fr 8fr 8fr 8fr 8fr 8fr 8fr 8fr 8fr;
-grid-template-columns: 8fr 8fr 8fr 8fr 8fr 8fr 8fr 8fr 8fr 8fr 8fr 8fr;
-    "pic    pic    pic    name   name   name   name   name   links  links  links  links"
-    "pic    pic    pic    quote  quote  quote  quote  quote  links  links  links  links"
-    "main   main   main   main   main   main   main   main   main   main   main   main"
-    "main   main   main   main   main   main   main   main   main   main   main   main"
-    "main   main   main   main   main   main   main   main   main   main   main   main"
-    "main   main   main   main   main   main   main   main   main   main   main   main"
-    "main   main   main   main   main   main   main   main   main   main   main   main"
-    "main   main   main   main   main   main   main   main   main   main   main   main"
-    "main   main   main   main   main   main   main   main   main   main   main   main"
-    "main   main   main   main   main   main   main   main   main   main   main   main"
-    "main   main   main   main   main   main   main   main   main   main   main   main"
-    "main   main   main   main   main   main   main   main   main   main   main   main"
-    "main   main   main   main   main   main   main   main   main   main   main   main"
-    "main   main   main   main   main   main   main   main   main   main   main   main"
-    "footer footer footer footer footer footer footer footer footer footer footer footer"
-    ; */
