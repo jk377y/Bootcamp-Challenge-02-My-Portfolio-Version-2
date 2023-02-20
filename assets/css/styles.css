@@ -231,7 +231,7 @@ h2, p {
 /* =========== Extras =========== */
 .link:visited {text-decoration: none;}
 .link:active {text-decoration: none;}
-.link:hover, .linkMe:hover {color: var(--hover); font-weight: bold;}
+.link:hover {color: var(--hover); font-weight: bold;}
 .border {
     border: 3px solid var(--borderColor);
     box-shadow: 2px 2px 7px 2px;
