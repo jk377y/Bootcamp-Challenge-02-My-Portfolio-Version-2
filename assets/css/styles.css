@@ -200,7 +200,7 @@ h2, p {
 } 
 .picOne, .picTwo, .picThree, .picFour, .picFive {
     border-radius: 30px;
-    width: 100%;
+    width: 80%;
     opacity: 0.7;
 }
 .one:hover img, .two:hover img, .three:hover img, .four:hover img, .five:hover img {
