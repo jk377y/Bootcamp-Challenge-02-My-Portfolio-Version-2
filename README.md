@@ -23,7 +23,7 @@ This page can be viewed at ***https://jk377y.github.io/Who_is_James/***
 ## **License**
 MIT License
 
-Copyright (c) 2022 James Kelly
+Copyright (c) 2023 James Kelly
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
