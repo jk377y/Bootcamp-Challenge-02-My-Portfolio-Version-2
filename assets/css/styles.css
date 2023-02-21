@@ -175,7 +175,7 @@ h2, p {
 .one, .two, .three, .four, .five {
     display: flex;
     justify-content: center;
-    height: 100%;
+    height: 85%;
     width: 75%;
 }
 .one {
@@ -200,8 +200,9 @@ h2, p {
 } 
 .picOne, .picTwo, .picThree, .picFour, .picFive {
     border-radius: 30px;
-    width: 80%;
+    width: 100%;
     opacity: 0.7;
+    padding: 2px;
 }
 .one:hover img, .two:hover img, .three:hover img, .four:hover img, .five:hover img {
     border: 3px solid var(--hover);
