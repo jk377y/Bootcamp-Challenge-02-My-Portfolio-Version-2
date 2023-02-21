@@ -229,6 +229,7 @@ h2, p {
     margin-right: 50px;
     margin-top: 20px;
 }
+.linkMe:hover{color: var(--hover);}
 /* =========== Extras =========== */
 .link:visited {text-decoration: none;}
 .link:active {text-decoration: none;}
