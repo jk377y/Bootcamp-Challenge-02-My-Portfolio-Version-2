@@ -1,0 +1,249 @@
+/* RESET CSS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: consolas;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+a:visited, a:link {
+  text-decoration: none;
+  color: var(--darkModeText)
+}
+a:hover {
+    color: var(--hover);
+}
+:root{
+    --darkModeText: rgb(255, 255, 255);
+    --lightModeText: rgb(0, 0, 0);
+    --hover: rgb(0, 240, 140);
+    --borderColor: rgb(54, 54, 54);
+    --windowColor: rgb(18, 18, 18);
+    --h1: 36px;
+    --h2: 24px;
+    --i: 16px;
+    --h3: 20px;
+    --h4: 16px;
+    --p: 12px;
+}
+h1{font-size: var(--h1);}
+h2{font-size: var(--h2);}
+h3{font-size: var(--h3);}
+h4{font-size: var(--h4);}
+p{font-size: var(--p);}
+body {
+    background-color: var(--lightModeText);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header */
+.header {
+    --bgImage: url(/assets/images/pics/office2.png);
+    --bgImageOpacity: 0.5;
+    width: 100%;
+    text-align: center;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    isolation: isolate;
+}
+.header::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: black;
+    opacity: var(--bgImageOpacity);
+    background-image: var(--bgImage);
+    background-size: cover;
+    background-position: center;
+}
+.name, .title, .quote {
+    color: var(--darkModeText)
+}
+.quote {
+    font-size: var(--i);
+}
+
+/* Pic and Tab Container */
+.picTabDiv {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Pic */
+.pic {
+    margin: 20px 0px 20px 20px;
+    width: 20%;
+    max-width: 250px;
+    border-radius: 50%;
+}
+
+/* Tabs */
+.tabs {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.tab {
+    background-color: var(--borderColor);
+    max-width: 100px;
+    font-size: var(--h3);
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    padding: 3px 3px;
+}
+.tab1:hover, .tab2:hover, .tab3:hover {
+    color: var(--hover);
+}
+.tabActive {
+    background-color: var(--hover);
+    color: black;
+}
+.tabActive:hover {
+    color: black;
+}
+
+/* Main Body Section */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* BIO Section */
+.bioContent {
+    display: flex;
+    justify-content: center;
+    background-color: var(--lightModeText);
+    margin: 10px;
+}
+.aboutTextP {
+    background-color: var(--windowColor);
+    width: 90%;
+    max-width: 1000px;
+    font-size: var(--h4);
+    color: white;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+/* PROJECTS Section */
+.projectsContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 850px;
+    border-radius: 5px 5px 5px 5px;
+    padding-top: 10px;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--windowColor);
+    margin-bottom: 25px;
+    font-size: var(--h2);
+    color: white;
+    text-align: center;
+    padding: 5px 20px 10px 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+.projLinks {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0px 0px 0px;
+}
+.projImg {
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0px;
+    padding-top: 5px;
+    background-color: var(--lightModeText);
+    border-radius: 10px;
+}
+.icon {
+    height: 36px;
+    width: 36px;
+    cursor: pointer;
+}
+
+/* Contact Section */
+.contactContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contactLinks {
+    width: 90%;
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#linkedIn:hover, #github:hover, #email:hover {
+    border: 2px solid var(--hover);
+    border-radius: 20px;
+}
+
+/* Used for javascript buttons to hide/show each section */
+.hide {
+    display:none;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 467px) {
+    :root {
+        --h1: 56px;
+        --h2: 32px;
+        --i: 20px;
+    }
+    .tab {
+        flex: 1;
+    }
+    .aboutTextP {
+        padding: 20px;
+        font-size: var(--h3);
+    }
+    .icon {
+        height: 48px;
+        width: 48px;
+    }
+    .contactLinks {
+        flex-direction: row;
+    }
+}

@@ -3,45 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Who Is James</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Puddles">
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <!-- header section with selfie image and nav links -->
+    <!-- Header Section -->
     <header class="header">
-        <img class="pic" src="./assets/images/james.jpg" alt="my profile pic">
-        <div class="title">
-            <h1 class="name">#JamesKelly</h1>
-            <h2 class="quote"><i>"Work Until You No<br>Longer Have To Introduce Yourself"</i></h2>
+        <div class="titleContainer">
+            <H1 class="name">#JamesKelly</H1>
+            <H2 class="title">Full Stack Web Developer</H2>
+            <i class="quote">"Work until you no longer have to introduce yourself"</i>
         </div>
-        <nav class="links">
-            <a class="link" href="#about"> About Me </a>
-            <a class="link" href="#work">My Recent Projects</a>
-            <a class="link" href="#contactMe">Contact Me</a>
-        </nav>
     </header>
-    <!-- main content section with bio and image links to my projects-->
-    <section class="main">
-        <div id="about" class="aboutMe"><h2>About Me</h2></div>
-        <div class="aboutText"><p class="aboutTextP">&nbsp;&nbsp;&nbsp;My passion for coding began in 1999. I was a freshman at North Carolina Central University in Durham, North Carolina. I remember my first web page design was very "monochromish" looking. We didn't have all the styling options that we have today. My most memorable project was written in Java where I built a pretty simple mortgage calculator on my own. That in itself isn't a huge feat, but considering we didn't have YouTube videos to reference at the time, it was quite the accomplishment. <br>&nbsp;&nbsp;&nbsp;Sadly, life's obstacles hit me hard and I ended up dropping out of school in order to take care of my family. Over the years I have attempted several times to go back and complete my education so that I could pursue what was once my passion. Here I am approaching the end of that journey after 23 years. It has been long hard road which has seen me through many career fields. I've worked labor jobs in construction, electrical and plumbing; worked in warehouses driving forklifts and handling shipping and receiving; worked for several years in the pawn business; been the low guy on the roster to manager positions throughout the food industry; and most recently done computer and electronic repairs.<br>&nbsp;&nbsp;&nbsp;&nbsp;Now it's time for me to turn my path back to what I love. Writing lines of code has always been where my heart has been. I built my first computer from scrap parts that my high school district was throwing in the dumpster. The faculty was amazed I even knew how to do it. They wouldn't let me keep it though since it was "school" property, but they did allow me to set it up in one of our classrooms for everyone to use. I began programming with Java and Visual Basic in the 11th grade. I remember my mom thinking that I was crazy typing stuff that didn't make sentences at all. The concept of coding was alien to her, but she encouraged me to continue. Even now, in my 40s, I find comfort sitting behind a keyboard and putting together simple websites and apps. I hope in the future to be part of a company that will do something meaningful for the human race.</p></div>
-        <div id="work" class="work">
-            <h2>My<br>Recent<br>Projects</h2>
+    <!-- Profile picture and button area -->
+    <div class="picTabDiv">
+        <img class="pic" src="/assets/images/pics/james.jpg" alt="picture of james">
+        <div class="tabs">
+            <h3 class="bio tab tab1 tabActive">Bio</h3>
+            <h3 class="projects tab tab2">Projects</h3>
+            <h3 class="contact tab tab3">Contact</h3>
         </div>
-        <div class="projects">
-            <a class="one" href="https://f4t.herokuapp.com/api/food" target="_blank"><img class="picOne border" src="./assets/images/f4t.JPG" alt="food4thought app"></a>
-            <a class="two" href="https://lol-db.herokuapp.com/" target="_blank"><img class="picTwo border" src="./assets/images/lol_db.JPG" alt="league of legends db app"></a>
-            <a class="three" href="https://jk377y.github.io/Navigation-Project/" target="_blank"><img class="picThree border" src="./assets/images/navigation.JPG" alt="navigation app"></a>
-            <a class="four" href="https://jk377y.github.io/Five_Day_Weather_App/" target="_blank"><img class="picFour border" src="./assets/images/fiveDayWeatherApp.JPG" alt="5Day weather app"></a>
-            <a class="five" href="https://jk377y.github.io/Two-API-s-One-Sun/" target="_blank"><img class="picFive border" src="./assets/images/twoApisOneSun.JPG" alt="two apis one sun app"></a>
+    </div>
+    <!-- Main Content Section  Bio/Projects/Contact -->
+    <div class="content">
+        <div class="bioContent">
+            <p class="aboutTextP">&nbsp;&nbsp;&nbsp;My passion for coding began in 1999. I was a freshman at North Carolina Central University in Durham, North Carolina. I remember my first web page design was very "monochromish" looking. We didn't have all the styling options that we have today. My most memorable project was written in Java where I built a pretty simple mortgage calculator on my own. That in itself isn't a huge feat, but considering we didn't have YouTube videos to reference at the time, it was quite the accomplishment. <br><br>&nbsp;&nbsp;&nbsp;Sadly, life's obstacles hit me hard and I ended up dropping out of school in order to take care of my family. Over the years I have attempted several times to go back and complete my education so that I could pursue what was once my passion. Here I am approaching the end of that journey after 23 years. It has been long hard road which has seen me through many career fields. I've worked labor jobs in construction, electrical and plumbing; worked in warehouses driving forklifts and handling shipping and receiving; worked for several years in the pawn business; been the low guy on the roster to manager positions throughout the food industry; and most recently done computer and electronic repairs.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;Now it's time for me to turn my path back to what I love. Writing lines of code has always been where my heart has been. I built my first computer from scrap parts that my high school district was throwing in the dumpster. The faculty was amazed I even knew how to do it. They wouldn't let me keep it though since it was "school" property, but they did allow me to set it up in one of our classrooms for everyone to use. I began programming with Java and Visual Basic in the 11th grade. I remember my mom thinking that I was crazy typing stuff that didn't make sentences at all. The concept of coding was alien to her, but she encouraged me to continue. Even now, in my 40s, I find comfort sitting behind a keyboard and putting together simple websites and apps. I hope in the future to be part of a company that will do something meaningful for the human race.<br></p><br>
         </div>
-    </section>
-    <!-- footer section with contact links -->
-    <footer id="contactMe" class="footer">
-        <a class="linkMe" href="https://www.linkedin.com/in/james-kelly-b93a94150/" target="_blank">Linkedin</a>
-        <a class="linkMe" href="mailto:jk377y@gmail.com">jk377y@gmail.com</a>
-        <a class="linkMe" href="https://github.com/jk377y?tab=repositories" target="_blank">GitHub</a>
-    </footer>
+        <div class="projectsContent hide">
+            <!-- 1st project on list -->
+            <div class="project">
+                <div class="projLinks">
+                    <h4><a href="https://f4t.herokuapp.com/" target="_blank">Live URL</a></h4>
+                    <h4><a href="https://github.com/DaniaOn/food-4-thought" target="_blank">Repo Link</a></h4>
+                </div>
+                <div class="icons">
+                    <a href="https://github.com/" target="_blank"><img class="icon" title="GitHub" src="/assets/images/icons/github.svg" alt="github icon"></a>
+                    <a href="https://www.mysql.com/" target="_blank"><img class="icon" title="MYSQL" src="/assets/images/icons/mysql.svg" alt="mysql icon"></a>
+                    <a href="https://www.heroku.com/" target="_blank"><img class="icon" title="Heroku" src="/assets/images/icons/heroku.svg" alt="heroku icon"></a>
+                    <a href="https://nodejs.org/en/" target="_blank"><img class="icon" title="NodeJS" src="/assets/images/icons/nodejs.svg" alt="node js icon"></a>
+                    <a href="https://www.npmjs.com/" target="_blank"><img class="icon" title="NPM" src="/assets/images/icons/npm.svg" alt="npm icon"></a>
+                    <a href="https://tailwindcss.com/" target="_blank"><img class="icon" title="TailwindCSS" src="/assets/images/icons/tailwind.svg" alt="tailwind css icon"></a>
+                </div>
+                <img class="projImg" title="Food4Thought" src="/assets/images/projects/f4t.JPG" alt="f4t project image">
+            </div>
+            <!-- 2nd project on list -->
+            <div class="project">
+                <div class="projLinks">
+                    <h4><a href="https://lol-db.herokuapp.com/" target="_blank">Live URL</a></h4>
+                    <h4><a href="https://github.com/jk377y/LOLdb" target="_blank">Repo Link</a></h4>
+                </div>
+                <div class="icons">
+                    <a href="https://github.com/" target="_blank"><img class="icon" title="GitHub" src="/assets/images/icons/github.svg" alt="github icon"></a>
+                    <a href="https://www.mysql.com/" target="_blank"><img class="icon" title="MYSQL" src="/assets/images/icons/mysql.svg" alt="mysql icon"></a>
+                    <a href="https://nodejs.org/en/" target="_blank"><img class="icon" title="NodeJS" src="/assets/images/icons/nodejs.svg" alt="node js icon"></a>
+                    <a href="https://www.heroku.com/" target="_blank"><img class="icon" title="Heroku" src="/assets/images/icons/heroku.svg" alt="heroku icon"></a>
+                    <a href="https://www.npmjs.com/" target="_blank"><img class="icon" title="NPM" src="/assets/images/icons/npm.svg" alt="npm icon"></a>
+                    <a href="https://www.w3schools.com/js/" target="_blank"><img class="icon" title="JavaScript" src="/assets/images/icons/javascript.svg" alt="javascript icon"></a>
+                    <a href="https://www.w3schools.com/css/" target="_blank"><img class="icon" title="css" src="/assets/images/icons/css.png" alt="css icon"></a>
+                </div>
+                <img class="projImg" title="LeagueOfLegends_db/api" src="/assets/images/projects/lol_db.JPG" alt="f4t project image">
+            </div>
+            <!-- 3rd project on list -->
+            <div class="project">
+                <div class="projLinks">
+                    <h4><a href="" target="_blank">No Demo Video</a></h4>
+                    <h4><a href="https://github.com/jk377y/hope-is-lost-ecomm-backend" target="_blank">Repo Link</a></h4>
+                </div>
+                <div class="icons">
+                    <a href="https://insomnia.rest/" target="_blank"><img class="icon" title="Insomnia" src="/assets/images/icons/insomnia.svg" alt="insomnia icon"></a>
+                    <a href="https://www.mysql.com/" target="_blank"><img class="icon" title="MYSQL" src="/assets/images/icons/mysql.svg" alt="mysql icon"></a>
+                    <a href="https://nodejs.org/en/" target="_blank"><img class="icon" title="NodeJS" src="/assets/images/icons/nodejs.svg" alt="node js icon"></a>
+                    <a href="https://www.npmjs.com/" target="_blank"><img class="icon" title="NPM" src="/assets/images/icons/npm.svg" alt="npm icon"></a>
+                    <a href="https://www.w3schools.com/js/" target="_blank"><img class="icon" title="JavaScript" src="/assets/images/icons/javascript.svg" alt="javascript icon"></a>
+                </div>
+                <img class="projImg" title="Hope Is Lost Ecommerce Backend" src="/assets/images/projects/getRoute.JPG" alt="f4t project image">
+            </div>
+            <!-- 4th project on list -->
+            <div class="project">
+                <div class="projLinks">
+                    <h4><a href="https://drive.google.com/file/d/1iQcTlfoJxcwo01Hm3B9_rHV--jlMZIJX/view" target="_blank">Demo Video</a></h4>
+                    <h4><a href="https://github.com/jk377y/2022-nba-all-stars-employee-tracker" target="_blank">Repo Link</a></h4>
+                </div>
+                <div class="icons">
+                    <a href="https://www.mysql.com/" target="_blank"><img class="icon" title="MYSQL" src="/assets/images/icons/mysql.svg" alt="mysql icon"></a>
+                    <a href="https://nodejs.org/en/" target="_blank"><img class="icon" title="NodeJS" src="/assets/images/icons/nodejs.svg" alt="node js icon"></a>
+                    <a href="https://www.npmjs.com/" target="_blank"><img class="icon" title="NPM" src="/assets/images/icons/npm.svg" alt="npm icon"></a>
+                    <a href="https://www.w3schools.com/js/" target="_blank"><img class="icon" title="JavaScript" src="/assets/images/icons/javascript.svg" alt="javascript icon"></a>
+                </div>
+                <img class="projImg" title="2022 NBA All Star Team Rosters" src="/assets/images/projects/nbaAllStarTeams.JPG" alt="f4t project image">
+            </div>
+            <!-- 5th project on list -->
+            <div class="project">
+                <div class="projLinks">
+                    <h4><a href="https://jk377y.github.io/Navigation-Project/" target="_blank">Live URL</a></h4>
+                    <h4><a href="https://github.com/jk377y/Navigation-Project" target="_blank">Repo Link</a></h4>
+                </div>
+                <div class="icons">
+                    <a href="https://www.mapbox.com/" target="_blank"><img class="icon" title="Mapbox" src="/assets/images/icons/mapbox.png" alt="mapbox icon"></a>
+                    <a href="https://www.w3schools.com/html/" target="_blank"><img class="icon" title="HTML5" src="/assets/images/icons/html5.svg" alt="html 5 icon"></a>
+                    <a href="https://www.w3schools.com/css/" target="_blank"><img class="icon" title="css" src="/assets/images/icons/css.png" alt="css icon"></a>
+                    <a href="https://www.w3schools.com/js/" target="_blank"><img class="icon" title="JavaScript" src="/assets/images/icons/javascript.svg" alt="javascript icon"></a>
+                </div>
+                <img class="projImg" title="Navigation Clone/GoogleMapsImitator" src="/assets/images/projects/navigation.JPG" alt="f4t project image">
+            </div>
+            <!-- 6th project on list -->
+            <div class="project">
+                <div class="projLinks">
+                    <h4><a href="https://jk377y.github.io/fames/" target="_blank">Live URL</a></h4>
+                    <h4><a href="https://github.com/jk377y/fames" target="_blank">Repo Link</a></h4>
+                </div>
+                <div class="icons">
+                    <a href="https://github.com/" target="_blank"><img class="icon" title="GitHub" src="/assets/images/icons/github.svg" alt="github icon"></a>
+                    <a href="https://www.w3schools.com/html/" target="_blank"><img class="icon" title="HTML5" src="/assets/images/icons/html5.svg" alt="html 5 icon"></a>
+                    <a href="https://www.w3schools.com/css/" target="_blank"><img class="icon" title="css" src="/assets/images/icons/css.png" alt="css icon"></a>
+                    <a href="https://www.w3schools.com/js/" target="_blank"><img class="icon" title="JavaScript" src="/assets/images/icons/javascript.svg" alt="javascript icon"></a>
+                </div>
+                <img class="projImg" title="Fames Calendar Project" src="/assets/images/projects/fames.JPG" alt="f4t project image">
+            </div>
+            <!-- 7th project on list -->
+            <div class="project">
+                <div class="projLinks">
+                    <h4><a href="https://jk377y.github.io/Two-API-s-One-Sun/" target="_blank">Live URL</a></h4>
+                    <h4><a href="https://github.com/jk377y/Two-API-s-One-Sun" target="_blank">Repo Link</a></h4>
+                </div>
+                <div class="icons">
+                    <a href="https://github.com/" target="_blank"><img class="icon" title="GitHub" src="/assets/images/icons/github.svg" alt="github icon"></a>
+                    <a href="https://www.w3schools.com/html/" target="_blank"><img class="icon" title="HTML5" src="/assets/images/icons/html5.svg" alt="html 5 icon"></a>
+                    <a href="https://www.w3schools.com/css/" target="_blank"><img class="icon" title="css" src="/assets/images/icons/css.png" alt="css icon"></a>
+                    <a href="https://www.w3schools.com/js/" target="_blank"><img class="icon" title="JavaScript" src="/assets/images/icons/javascript.svg" alt="javascript icon"></a>
+                </div>
+                <img class="projImg" title="Two-API-s-One-Sun Project" src="/assets/images/projects/twoApisOneSun.JPG" alt="f4t project image">
+            </div>
+        </div>
+    </div>
+    <div class="contactContent hide">
+        <div class="contactLinks">
+            <a id="linkedIn" href="https://www.linkedin.com/in/james-kelly-b93a94150/" target="_blank" title="LinkedIn"><img src="/assets/images/icons/linkedIn.svg" alt="linkedin link"></a>
+            <a id="github" href="https://github.com/jk377y" target="_blank" title="GitHub"><img src="/assets/images/icons/github2.svg" alt="github link"></a>
+            <a id="email" href="mailto:jk377y@gmail.com" title="Email"><img src="/assets/images/icons/email.svg" alt="email link"></a>
+        </div>
+    </div>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
